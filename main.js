@@ -14,17 +14,17 @@ function add() {
 	// 5 - Escreva os comandos para fazer upload de imagens de carros e fundo da tela
 	background_imgTag = new Image(); //definindo uma variável com uma nova imagem
 	background_imgTag.onload = uploadBackground; // ajustando uma função, ao carregar esse variável
-	background_imgTag.src = background_img;   // carregar imagem
+	background_imgTag.src = background_image;   // carregar imagem
 
 	greencar_imgTag = new Image(); //definindo uma variável com uma nova imagem
 	greencar_imgTag.onload = uploadgreencar; // ajustando uma função, ao carregar esse variável
-	greencar_imgTag.src = greencar_img;   // carregar imagem
+	greencar_imgTag.src = greencar_image;   // carregar imagem
 }
 
 
 function uploadBackground() {
 	// 6- Escreva os comandos para adicionar a imagem de fundo
-	ctx.drawImage(background_imgTag, 0, 0, canvas_width, canvas_height);
+	ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
 }
 
 function uploadgreencar() {
